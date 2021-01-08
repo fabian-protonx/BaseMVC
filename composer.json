@@ -1,0 +1,16 @@
+{
+    "name": "fabian/basemvc",
+    "description": "BaseMVC",
+    "authors": [
+        {
+            "name": "Fabian Suter",
+            "email": "fabian.suter@protonx.ch"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "protonx\\basemvc\\": "./"
+        }
+    },
+    "require": {}
+}

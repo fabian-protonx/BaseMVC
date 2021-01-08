@@ -1,0 +1,129 @@
+
+/* ----------------------------------------------- */
+/* NAVBAR                                          */
+/* ----------------------------------------------- */
+
+nav {
+    background-color: $main-color;
+    height: 80px;
+    width: 100%;
+    transition: all 320ms;
+  
+    .btncheck {
+      font-size: 30px;
+      color: #ffffff;
+      float: right;
+      line-height: 80px;
+      margin-right: 2rem;
+      cursor: pointer;
+      display: none;
+    }
+  
+    #check {
+      display: none;
+    }
+  
+    label.logo {
+      color: #ffffff;
+      font-size: 36px;
+      line-height: 80px;
+      padding: 0 2rem;
+      font-weight: bold;
+      float: left;
+    }
+  
+    ul {
+      list-style-type: none;
+      float: right;
+      margin: 0 2rem 0 0;
+  
+      li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+  
+        a {
+          display: inline-block;
+          color: #ffffff;
+          text-decoration: none;
+          // text-transform: uppercase;
+          font-size: 20px;
+          transition: all 120ms;
+  
+          &:hover, &:active {
+            background: none;
+            color: $main-color-darker;
+          }
+        }
+      }
+    }
+  
+    @media(max-width: 952px){
+       
+      height: 60px;
+  
+      .btncheck {
+        line-height: 60px;
+      }
+        
+      label.logo {
+        line-height: 60px;
+        font-size: 30px;
+        padding-left: 1rem;
+      }
+  
+      ul {
+        li {
+          line-height: 60px;
+  
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  
+    @media(max-width: 858px){
+      .btncheck {
+        display: block;
+      }
+  
+      #check:checked ~ ul {
+        left: 0px;
+      }
+  
+      ul {
+        position: fixed;
+        width: 100%;
+        background-color: #293C50;
+        height: 100vh;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+        padding: 0;
+        padding-top: 2rem;
+  
+        li {
+          display: block;
+  
+          a {
+            font-size: 20px;
+            line-height: 48px;
+            width: 100%;
+            display: inline-block;
+            
+  
+            &:hover, &:active {
+              background: none;
+              // color: #0082e6;
+              background-color: yellowgreen;
+            }
+          }
+        }
+      }
+    }
+}
+  
+  

@@ -1,0 +1,54 @@
+/* ----------------------------------------------- */
+/* HELPERS                                         */
+/* ----------------------------------------------- */
+
+.pull-left{ float: left; }
+.pull-right{ float: right; }
+
+// .text-left { text-align: left; }
+// .text-center { text-align: center; }
+// .text-right { text-align: right; }
+
+// .text-info { color: blue; }
+// .text-success { color: #50931a; }
+// .text-danger { color: crimson; }
+
+// .text-info-bg { background-color: blue; color: #ffffff; }
+// .text-success-bg { background-color: green; color: #ffffff; }
+// .text-danger-bg { background-color: crimson; color: #ffffff; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+/* ----------------------------------------------- */
+/* BASE STYLE                                      */
+/* ----------------------------------------------- */
+
+html, body{
+  height: 100%;
+  font-size: 16px;
+  background-color: $main-bg-color;
+  font-family: $main-font, sans-serif;
+}
+
+h1 { 
+  background-color: $main-color-dark; 
+}
+
+.container {
+  max-width: 1200px;
+  background-color: grey;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+
+
+
+
+
+

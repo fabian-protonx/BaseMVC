@@ -1,0 +1,214 @@
+/* https://hankchizljaw.com/wrote/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  height: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ----------------------------------------------- */
+/* NAVBAR                                          */
+/* ----------------------------------------------- */
+nav {
+  background-color: #3F7CF9;
+  height: 80px;
+  width: 100%;
+  -webkit-transition: all 320ms;
+  transition: all 320ms;
+}
+
+nav .btncheck {
+  font-size: 30px;
+  color: #ffffff;
+  float: right;
+  line-height: 80px;
+  margin-right: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+nav #check {
+  display: none;
+}
+
+nav label.logo {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 80px;
+  padding: 0 2rem;
+  font-weight: bold;
+  float: left;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  margin: 0 2rem 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  -webkit-transition: all 120ms;
+  transition: all 120ms;
+}
+
+nav ul li a:hover, nav ul li a:active {
+  background: none;
+  color: #293C50;
+}
+
+@media (max-width: 952px) {
+  nav {
+    height: 60px;
+  }
+  nav .btncheck {
+    line-height: 60px;
+  }
+  nav label.logo {
+    line-height: 60px;
+    font-size: 30px;
+    padding-left: 1rem;
+  }
+  nav ul li {
+    line-height: 60px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  nav .btncheck {
+    display: block;
+  }
+  nav #check:checked ~ ul {
+    left: 0px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    background-color: #293C50;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    left: -100%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    padding: 0;
+    padding-top: 2rem;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    font-size: 20px;
+    line-height: 48px;
+    width: 100%;
+    display: inline-block;
+  }
+  nav ul li a:hover, nav ul li a:active {
+    background: none;
+    background-color: yellowgreen;
+  }
+}
+
+/* ----------------------------------------------- */
+/* HELPERS                                         */
+/* ----------------------------------------------- */
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----------------------------------------------- */
+/* BASE STYLE                                      */
+/* ----------------------------------------------- */
+html, body {
+  height: 100%;
+  font-size: 16px;
+  background-color: #ffffff;
+  font-family: "montserratregular", sans-serif;
+}
+
+h1 {
+  background-color: #2A52A6;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: grey;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ----------------------------------------------- */
+/* PAGE LAYOUT                                     */
+/* ----------------------------------------------- */
+/*# sourceMappingURL=basemvc.css.map */

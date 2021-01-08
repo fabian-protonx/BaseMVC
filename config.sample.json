@@ -1,0 +1,14 @@
+{
+    "UserClass": "\\protonx\\basemvc\\models\\User",
+    "Database": {
+        "dsn" : "mysql:host=localhost;port=3306;dbname=basemvc",
+        "user" : "protonx",
+        "password" : "protonx"
+    },
+    "SMTP": {
+        "Host" : "",
+        "Port" : "",
+        "user" : "",
+        "password" : ""
+    }
+}
